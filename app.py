@@ -176,7 +176,7 @@ lat = current_weather["coord"]["lat"]
 lon = current_weather["coord"]["lon"]
 m = folium.Map(location=[lat, lon], zoom_start=10)
 folium.Marker([lat, lon], tooltip=city).add_to(m)
-folium_static(m)
+st_folium = folium_static(m)
 
 # Fetch and display air quality
 st.header("Air Quality Index (AQI) 🌫️")
